@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Web app</title>
+  <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/thanh.css">
+</head>
+
+<body>
+  <div id="main">
+    <header id="header">
+      <div class="header-nav">
+        <span class="header-nav__heading kirin-font">テイクアウツ！</span>
+        <button id="nav_trigger"></button>
+      </div>
+      <div class="main-nav__overlay">
+        <div class="main-nav border-5">
+          <div class="main-nav__header">
+            <span class="kirin-font">メニュー！！</span>
+            <button id="nav_close"></button>
+          </div>
+          <div class="main-nav__body">
+            <a href="#" class="d-block border-5 text-dark text-decoration-none mb-3">
+              <span class="btn-content">
+                <img src="images/address.png" alt="">
+                <span class="btn-text">現在付近のお店を探す</span>
+              </span>
+            </a>
+            <a href="#" class="d-block border-5 text-dark text-decoration-none">
+              <span class="btn-content">
+                <img src="images/japan.png" alt="">
+                <span class="btn-text">地域を選択して探す</span>
+              </span>
+            </a>
+          </div>
+          <div class="main-nav__footer">
+            <a href="#" class="text-dark">アンバサダー登録</a>
+            <a href="#" class="text-dark">運営会社</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <div class="bscustom-tabs pt-90">
+          <nav class="tab-header">
+            <div class="nav" id="nav-tab" role="tablist">
+              <a class="nav-item active" data-toggle="tab" href="#tab1" role="tab" aria-controls="nav-home" aria-selected="true"><span class="nav-link">地域選択</span></a>
+              <a class="nav-item" data-toggle="tab" href="#tab2" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="nav-link">店舗一覧</span></a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+              <div class="tab-content__header header-1">
+                <span class="tab-content__title">都道府県を選択してください</span>
+              </div>
+              <div class="tab-content__body">
+                <div class="location-list">
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>北海道</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>東北</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>関東</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>北陸</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>中部</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>甲信越</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>関西</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>中国・四国</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>九州</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="location-list__wrapper">
+                    <div class="location-list__item location-expand mb-3">
+                      <span>沖縄</span>
+                      <button class="show-location"></button>
+                    </div>
+                    <div class="location-detail">
+                      <div class="location-list__item">
+                        <span>関東</span>
+                        <button class="hide-location"></button>
+                      </div>
+                      <ul class="location-detail__list">
+                        <li>
+                          <a href="#">
+                            <span>東京</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>神奈川</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>千葉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>埼玉</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>山梨</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>茨城</span>
+                            <button></button>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>栃木</span>
+                            <button></button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel">
+              <div class="tab-content__header header-1">
+                <span class="tab-content__title">都道府県を選択してください</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="libs/js/jquery-3.4.1.min.js"></script>
+  <script src="libs/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
